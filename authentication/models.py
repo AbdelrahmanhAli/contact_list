@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User, AbstractUser, AbstractBaseUser
 # Create your models here.
 class UserInfo(AbstractUser):
-   # username= models.ForeignKey(User,blank=False, on_delete=models.CASCADE)
+    #username= models.ForeignKey(User,blank=False, on_delete=models.CASCADE)
     email= models.EmailField(blank=False,unique=True)
     job_title= models.CharField(max_length=300,blank=True, null=True)
     age= models.IntegerField(blank=False,null=False)
